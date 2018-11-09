@@ -325,6 +325,12 @@ template {
 @font-face {
   font-family: "Open Sans Bold";
   src: url("../font/open-sans.bold.ttf"); }
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../font/raleway/Raleway-Bold.ttf"); }
+@font-face {
+  font-family: "Lato Italic";
+  src: url("../font/Lato2OFL/Lato-Italic.ttf"); }
 header #top-head {
   width: 100%;
   background: #383838;
@@ -457,5 +463,26 @@ header #main-nav {
           padding-right: 23px; }
     header #main-nav .container nav a:hover {
       text-decoration: none; }
+
+#main-slider #goneshopSlider .carousel-inner .item {
+  position: relative;
+  height: 600px; }
+#main-slider #goneshopSlider .carousel-inner .item1 {
+  background-image: url("../image/gon_shop_01_home.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  #main-slider #goneshopSlider .carousel-inner .item1 .container .slideCaption p:nth-child(1) {
+    font-size: 26px;
+    font-family: "Lato Regular";
+    color: #3f3f3f;
+    text-transform: uppercase; }
+  #main-slider #goneshopSlider .carousel-inner .item1 .container .slideCaption p:nth-child(2) {
+    font-size: 70px;
+    color: #3f3f3f;
+    font-family: "Raleway Bold"; }
+  #main-slider #goneshopSlider .carousel-inner .item1 .container .slideCaption p:nth-child(3) {
+    font-size: 18px;
+    font-family: "Lato Italic";
+    color: #3f3f3f; }
 
 /*# sourceMappingURL=style.css.map */

@@ -39,12 +39,24 @@
     src: url("../font/open-sans.bold.ttf");
 }
 
+@font-face {
+    font-family: "Raleway Bold";
+    src: url("../font/raleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato Italic";
+    src: url("../font/Lato2OFL/Lato-Italic.ttf");
+}
+
 $font-category: "Lato Bold";
 $color-logo: #40bea7;
 $color-top-head:#383838;
 $font-tophead: "Lato Regular";
 $font-open-sans: "Open Sans";
 $font-open-sans-bold: "Open Sans Bold";
+$font-raleway-bold: "Raleway Bold";
+$font-lato-italic: "Lato Italic";
 header {
     #top-head {
         width: 100%;
@@ -234,6 +246,54 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+#main-slider {
+    #goneshopSlider {
+        .carousel-inner {
+            .item {
+                position: relative;
+                height: 600px;
+            }
+            .item1 {
+                background-image: url("../image/gon_shop_01_home.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                .container {
+                    .slideCaption {
+                        p {
+                            &:nth-child(1) {
+                                font-size: 26px;
+                                font-family: $font-tophead;
+                                color: rgb( 63, 63, 63);
+                                text-transform: uppercase;
+                            }
+                            &:nth-child(2) {
+                                font-size: 70px;
+                                color: rgb( 63, 63, 63);
+                                font-family: $font-raleway-bold;
+                            }
+                            &:nth-child(3) {
+                                font-size: 18px;
+                                font-family: $font-lato-italic;
+                                color: rgb( 63, 63, 63);
+                            }
+                        }
+                    }
+                }
+            }
+            // .item2 {
+            //     background-image: url("../image/slider2.png");
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            // }
+            // .item3 {
+            //     background-image: url("../image/slider3.png");
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            // }
         }
     }
 }
