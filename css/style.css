@@ -309,13 +309,13 @@ template {
 .right {
   float: right; }
 
-@font-face {
-  font-family: "Lato Regular";
-  src: url("../font/Lato2OFL/Lato-Regular.ttf"); }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
     box-sizing: content-box; } }
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../font/Lato2OFL/Lato-Regular.ttf"); }
 @font-face {
   font-family: "Lato Bold";
   src: url("../font/Lato2OFL/Lato-Bold.ttf"); }
@@ -468,21 +468,106 @@ header #main-nav {
   position: relative;
   height: 600px; }
 #main-slider #goneshopSlider .carousel-inner .item1 {
-  background-image: url("../image/gon_shop_01_home.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: url("../image/gon_shop_01_home.png") center center;
+  background-repeat: repeat;
+  background-size: cover; }
   #main-slider #goneshopSlider .carousel-inner .item1 .container .slideCaption p:nth-child(1) {
     font-size: 26px;
     font-family: "Lato Regular";
     color: #3f3f3f;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 154px;
+    margin-bottom: 15px; }
   #main-slider #goneshopSlider .carousel-inner .item1 .container .slideCaption p:nth-child(2) {
     font-size: 70px;
     color: #3f3f3f;
-    font-family: "Raleway Bold"; }
+    font-family: "Raleway Bold";
+    line-height: 0.9;
+    margin-bottom: 28px; }
   #main-slider #goneshopSlider .carousel-inner .item1 .container .slideCaption p:nth-child(3) {
     font-size: 18px;
     font-family: "Lato Italic";
+    color: #3f3f3f;
+    margin-bottom: 23px; }
+  #main-slider #goneshopSlider .carousel-inner .item1 .container .slide-button .viewMore {
+    width: 160px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lato Bold";
+    color: white;
+    background: #3f3f3f;
+    line-height: 50px;
+    margin-right: 10px; }
+  #main-slider #goneshopSlider .carousel-inner .item1 .container .slide-button .buyNow {
+    width: 160px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-family: "Lato Bold";
+    color: #3f3f3f;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #40bea7;
+    background-color: white;
+    box-sizing: border-box;
+    line-height: 50px; }
+#main-slider #goneshopSlider .carousel-inner .item2 {
+  background: url("../image/slider2.png");
+  background-repeat: repeat;
+  background-size: cover; }
+#main-slider #goneshopSlider .carousel-inner .item3 {
+  background: url("../image/slider3.png") center center;
+  background-repeat: repeat;
+  background-size: cover; }
+
+#freeService {
+  margin-top: 29px; }
+
+#contentProduct .container .row .col-md-3 .topRated {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  background-color: white;
+  padding: 8px 15px 21px 20px;
+  box-sizing: border-box; }
+  #contentProduct .container .row .col-md-3 .topRated .topRatedBoxTitle {
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e6e6e6;
     color: #3f3f3f; }
+  #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6; }
+    #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .media {
+      margin-right: 20px; }
+    #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .infoProduct {
+      display: table-cell;
+      vertical-align: top; }
+      #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .infoProduct .nameProduct {
+        line-height: 0.9; }
+        #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .infoProduct .nameProduct a {
+          font-size: 13.057px;
+          font-family: "Lato Regular";
+          color: #b8b8b8;
+          text-transform: uppercase;
+          text-decoration: none; }
+      #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .infoProduct .depProduct {
+        font-size: 14.062px;
+        font-family: "Lato Regular";
+        color: #3f3f3f;
+        margin-bottom: 7px; }
+      #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .infoProduct .price {
+        font-size: 16.071px;
+        font-family: "Lato Bold";
+        margin-bottom: 5px; }
+        #contentProduct .container .row .col-md-3 .topRated .box-top-rated-product .infoProduct .price ins {
+          text-decoration: none;
+          color: #3f3f3f; }
 
 /*# sourceMappingURL=style.css.map */
