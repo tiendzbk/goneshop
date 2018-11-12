@@ -6,6 +6,11 @@
         .right {
             float: right;
         }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
         
         @mixin wrap-content {
             width: 1170px;
@@ -373,6 +378,17 @@
             text-transform: uppercase;
             line-height: 0.9;
         }
+        @mixin owlNav($widthBtn , $heightBtn) {
+            width: $widthBtn;
+            height: $heightBtn;
+            border: 2px solid rgb( 230, 230, 230);
+            box-sizing: border-box;
+            text-align: center;
+            i{
+                font-size: 21px;
+                color: rgb( 116, 116, 116 );      
+            }
+        }
         
         #contentProduct {
             .container {
@@ -386,15 +402,7 @@
                             padding: 8px 15px 21px 20px;
                             box-sizing: border-box;
                             .topRatedBoxTitle {
-                                font-size: 18px;
-                                font-family: $font-raleway-bold;
-                                text-transform: uppercase;
-                                text-align: center;
-                                padding-bottom: 15px;
-                                // width: 230px;
-                                box-sizing: border-box;
-                                border-bottom: 1px solid rgb( 230, 230, 230);
-                                color: rgb( 63, 63, 63);
+                                @include text-box-title();
                             }
                             .box-topRated-product {
                                 .media {
@@ -624,6 +632,80 @@
                                     display: inherit;
                                     
                                 }
+                            }
+                        }
+                    }
+                }
+                .row-advs{
+                    margin-top: 80px;
+                }
+                .row-lastest-new{
+                    margin-top: 80px;
+                    position: relative;
+                    .box-title{
+                        @include text-box-title();
+                        line-height: 0.7;
+                        padding-bottom: 30px;
+                        font-size: 25px;
+                        padding-bottom: 2px solid rgb( 225, 225, 225 );       
+                    }
+                    .row-lastest-new-carsoule{
+                        margin-top: 40px;
+                        .item{
+                            width: 370px;
+                            min-height: 412px;
+                            box-sizing: border-box;
+                            border: 1px solid rgb(230,230,230);
+                            margin-right: 30px;
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                            .caption{
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                .title-caption{
+                                    a{
+                                        text-decoration: none;
+                                        font-size: 16px;
+                                        font-family: $font-raleway-bold;
+                                        color: rgb( 63, 63, 63 );     
+                                    }
+                                }
+                                .depcr{
+                                    font-size: 13px;
+                                    font-family: $font-open-sans;
+                                    color: rgb( 136, 136, 136 );
+                                    line-height: 1.692;                                      
+                                }
+                                .read-more-cmt{
+                                    .pull-left{
+                                        a{
+                                            font-size: 12px;
+                                            font-family: $font-category;
+                                            color: rgb( 136, 136, 136 );
+                                            text-decoration: none;
+                                            i{
+                                                padding-right: 10px;
+                                            }
+                                              
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .owl-nav{
+                            .owl-prev{
+                                @include owlNav(30px,30px );
+                                position: absolute;
+                                left: 0px;
+                                top : 0px;
+                            }
+                            .owl-next{
+                                @include owlNav(30px,30px );
+                                position: absolute;
+                                right : 0px;
+                                top : 0px;
                             }
                         }
                     }

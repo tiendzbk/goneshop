@@ -313,6 +313,11 @@ template {
 .right {
   float: right; }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -539,12 +544,12 @@ header #main-nav {
   #contentProduct .container .row .col-md-3 .topRated .topRatedBoxTitle {
     font-size: 18px;
     font-family: "Raleway Bold";
-    text-transform: uppercase;
     text-align: center;
-    padding-bottom: 15px;
-    box-sizing: border-box;
+    padding-bottom: 18px;
     border-bottom: 1px solid #e6e6e6;
-    color: #3f3f3f; }
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 0.9; }
   #contentProduct .container .row .col-md-3 .topRated .box-topRated-product .media {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -804,5 +809,77 @@ header #main-nav {
       background: #3f3f3f;
       text-transform: uppercase;
       display: inherit; }
+#contentProduct .container .row-advs {
+  margin-top: 80px; }
+#contentProduct .container .row-lastest-new {
+  margin-top: 80px;
+  position: relative; }
+  #contentProduct .container .row-lastest-new .box-title {
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    text-align: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 0.9;
+    line-height: 0.7;
+    padding-bottom: 30px;
+    font-size: 25px;
+    padding-bottom: 2px solid #e1e1e1; }
+  #contentProduct .container .row-lastest-new .row-lastest-new-carsoule {
+    margin-top: 40px; }
+    #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item {
+      width: 370px;
+      min-height: 412px;
+      box-sizing: border-box;
+      border: 1px solid #e6e6e6;
+      margin-right: 30px; }
+      #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item:last-child {
+        margin-right: 0px; }
+      #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item .caption {
+        padding-left: 20px;
+        padding-right: 20px; }
+        #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item .caption .title-caption a {
+          text-decoration: none;
+          font-size: 16px;
+          font-family: "Raleway Bold";
+          color: #3f3f3f; }
+        #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item .caption .depcr {
+          font-size: 13px;
+          font-family: "Open Sans";
+          color: #888888;
+          line-height: 1.692; }
+        #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item .caption .read-more-cmt .pull-left a {
+          font-size: 12px;
+          font-family: "Lato Bold";
+          color: #888888;
+          text-decoration: none; }
+          #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .item .caption .read-more-cmt .pull-left a i {
+            padding-right: 10px; }
+    #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .owl-nav .owl-prev {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #e6e6e6;
+      box-sizing: border-box;
+      text-align: center;
+      position: absolute;
+      left: 0px;
+      top: 0px; }
+      #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .owl-nav .owl-prev i {
+        font-size: 21px;
+        color: #747474; }
+    #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .owl-nav .owl-next {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #e6e6e6;
+      box-sizing: border-box;
+      text-align: center;
+      position: absolute;
+      right: 0px;
+      top: 0px; }
+      #contentProduct .container .row-lastest-new .row-lastest-new-carsoule .owl-nav .owl-next i {
+        font-size: 21px;
+        color: #747474; }
 
 /*# sourceMappingURL=style.css.map */
