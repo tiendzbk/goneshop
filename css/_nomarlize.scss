@@ -126,6 +126,11 @@ strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 code,
 kbd,
 samp {

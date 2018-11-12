@@ -88,6 +88,10 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+* {
+  margin: 0;
+  padding: 0; }
+
 code,
 kbd,
 samp {
@@ -578,6 +582,85 @@ header #main-nav {
       margin-bottom: 6px; }
 #contentProduct .container .row .col-md-3 #sale-slide {
   margin-top: 32px; }
+#contentProduct .container .row .col-md-3 .testimonials {
+  padding: 15px 20px 25px 20px;
+  border: 1px solid #e6e6e6;
+  margin-top: 30px;
+  box-sizing: border-box; }
+  #contentProduct .container .row .col-md-3 .testimonials .box-title {
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    text-align: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 0.9; }
+  #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel {
+    text-align: center;
+    padding-top: 20px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.786;
+    font-family: "Lato Italic";
+    color: #3f3f3f;
+    position: relative; }
+    #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel img {
+      margin: 16px auto 0px;
+      width: 60px;
+      height: 60px; }
+    #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel .nameTestimonials {
+      font-size: 14px;
+      font-family: "Lato Bold";
+      color: #3f3f3f;
+      line-height: 0.9;
+      padding-top: 11px;
+      text-transform: uppercase; }
+    #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel .testimonialsJob {
+      font-size: 14px;
+      font-family: "Lato Regular";
+      line-height: 0.9;
+      color: #e4e4e4;
+      padding-bottom: 22px;
+      text-transform: uppercase;
+      margin-bottom: 0px; }
+    #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel .owl-nav {
+      margin-top: 0px; }
+      #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel .owl-nav .owl-prev,
+      #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel .owl-nav .owl-next {
+        background: transparent;
+        text-align: center;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #e6e6e6;
+        margin-top: 0px; }
+      #contentProduct .container .row .col-md-3 .testimonials .testimonials-carousel .owl-nav i {
+        font-size: 21px;
+        color: #747474; }
+#contentProduct .container .row .col-md-3 .ourBrand {
+  padding: 15px 20px 25px 20px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  margin-top: 30px; }
+  #contentProduct .container .row .col-md-3 .ourBrand .box-title {
+    font-size: 18px;
+    font-family: "Raleway Bold";
+    text-align: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 0.9; }
+  #contentProduct .container .row .col-md-3 .ourBrand .brand-carousel .row-brands {
+    padding-top: 20px; }
+    #contentProduct .container .row .col-md-3 .ourBrand .brand-carousel .row-brands .row-brands-item {
+      content: "";
+      clear: both;
+      display: table;
+      padding-bottom: 10px; }
+      #contentProduct .container .row .col-md-3 .ourBrand .brand-carousel .row-brands .row-brands-item .pull-left {
+        padding-right: 8px; }
 #contentProduct .container .row .col-md-9 .featuresProduct {
   border: 1px solid #e6e6e6;
   padding: 10px 19px 10px 19px; }
@@ -681,18 +764,45 @@ header #main-nav {
       padding-bottom: 30px; }
 #contentProduct .container .row .col-md-9 .newsLetter {
   text-align: center;
-  background: url("../image/background-newsletter.png") no-repeat center center;
-  background-size: cover; }
+  margin-top: 30px;
+  height: 260px;
+  background: url("../image/background-newsletter1.png") no-repeat; }
   #contentProduct .container .row .col-md-9 .newsLetter h3 {
     font-size: 30px;
     font-family: "Raleway Bold";
     line-height: 0.8;
     margin: 0px;
     padding-top: 52px;
-    padding-bottom: 30px; }
+    padding-bottom: 23px;
+    text-transform: uppercase; }
   #contentProduct .container .row .col-md-9 .newsLetter .text-newsletter {
     font-size: 14px;
     font-family: "Lato Regular";
-    color: #3f3f3f; }
+    color: #3f3f3f;
+    margin-bottom: 29px; }
+  #contentProduct .container .row .col-md-9 .newsLetter .send-email-input {
+    display: inline-block; }
+    #contentProduct .container .row .col-md-9 .newsLetter .send-email-input input {
+      width: 470px;
+      height: 40px;
+      box-sizing: border-box;
+      padding: 12px 20px 12px 20px;
+      margin-right: 10px; }
+      #contentProduct .container .row .col-md-9 .newsLetter .send-email-input input::placeholder {
+        font-family: "Lato Italic";
+        font-size: 14px;
+        color: #c1c1c2; }
+    #contentProduct .container .row .col-md-9 .newsLetter .send-email-input .btn-read-more {
+      height: 40px;
+      width: 120px;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 40px;
+      font-size: 12px;
+      font-family: "Lato Bold";
+      color: white;
+      background: #3f3f3f;
+      text-transform: uppercase;
+      display: inherit; }
 
 /*# sourceMappingURL=style.css.map */

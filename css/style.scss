@@ -427,6 +427,88 @@
                         #sale-slide {
                             margin-top: 32px;
                         }
+                        .testimonials {
+                            padding: 15px 20px 25px 20px;
+                            border: 1px solid rgb( 230, 230, 230);
+                            margin-top: 30px;
+                            box-sizing: border-box;
+                            .box-title {
+                                @include text-box-title();
+                            }
+                            .testimonials-carousel {
+                                text-align: center;
+                                padding-top: 20px;
+                                vertical-align: top;
+                                font-size: 14px;
+                                line-height: 1.786;
+                                font-family: $font-lato-italic;
+                                color: rgb( 63, 63, 63);
+                                position: relative;
+                                img {
+                                    margin: 16px auto 0px;
+                                    // padding-top: 20px;
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                                .nameTestimonials {
+                                    font-size: 14px;
+                                    font-family: $font-category;
+                                    color: rgb( 63, 63, 63);
+                                    line-height: 0.9;
+                                    padding-top: 11px;
+                                    text-transform: uppercase;
+                                }
+                                .testimonialsJob {
+                                    font-size: 14px;
+                                    font-family: $font-tophead;
+                                    line-height: 0.9;
+                                    color: rgb(228, 228, 228);
+                                    padding-bottom: 22px;
+                                    text-transform: uppercase;
+                                    margin-bottom: 0px;
+                                }
+                                .owl-nav {
+                                    margin-top: 0px;
+                                    .owl-prev,
+                                    .owl-next {
+                                        background: transparent;
+                                        text-align: center;
+                                        box-sizing: border-box;
+                                        width: 30px;
+                                        height: 30px;
+                                        border: 2px solid rgb( 230, 230, 230);
+                                        margin-top: 0px;
+                                    }
+                                    i {
+                                        font-size: 21px;
+                                        color: rgb( 116, 116, 116);
+                                    }
+                                }
+                            }
+                        }
+                        .ourBrand {
+                            padding: 15px 20px 25px 20px;
+                            border: 1px solid rgb( 230, 230, 230);
+                            box-sizing: border-box;
+                            margin-top: 30px;
+                            .box-title {
+                                @include text-box-title();
+                            }
+                            .brand-carousel {
+                                .row-brands {
+                                    padding-top: 20px;
+                                    .row-brands-item {
+                                        content: "";
+                                        clear: both;
+                                        display: table;
+                                        padding-bottom: 10px;
+                                        .pull-left {
+                                            padding-right: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                     .col-md-9 {
                         .featuresProduct {
@@ -493,20 +575,55 @@
                         }
                         .newsLetter {
                             text-align: center;
-                            background: url("../image/background-newsletter.png") no-repeat center center;
-                            background-size: cover;
+                            margin-top: 30px;
+                            height: 260px;
+                            background: url("../image/background-newsletter1.png") no-repeat;
+                            // background-size: cover;
                             h3 {
                                 font-size: 30px;
                                 font-family: $font-raleway-bold;
                                 line-height: 0.8;
                                 margin: 0px;
                                 padding-top: 52px;
-                                padding-bottom: 30px;
+                                padding-bottom: 23px;
+                                text-transform: uppercase;
                             }
                             .text-newsletter {
                                 font-size: 14px;
                                 font-family: $font-tophead;
                                 color: rgb( 63, 63, 63);
+                                margin-bottom: 29px;
+                            }
+                            .send-email-input {
+                                display: inline-block;
+                                input {
+                                    width: 470px;
+                                    height: 40px;
+                                    box-sizing: border-box;
+                                    padding: 12px 20px 12px 20px;
+                                    margin-right: 10px;
+                                    // display: inline-block;
+                                    &::placeholder {
+                                        font-family: $font-lato-italic;
+                                        font-size: 14px;
+                                        color: rgb( 193, 193, 194);
+                                    }
+                                }
+                                .btn-read-more {
+                                    height: 40px;
+                                    width: 120px;
+                                    box-sizing: border-box;
+                                    text-align: center;
+                                    line-height: 40px;
+                                    font-size: 12px;
+                                    font-family: $font-category;
+                                    color: rgb( 255, 255, 255);
+                                    // float: left;
+                                    background: rgb( 63, 63, 63);
+                                    text-transform: uppercase;
+                                    display: inherit;
+                                    
+                                }
                             }
                         }
                     }
